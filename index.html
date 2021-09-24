@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+    <link href="styles.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <div id="app">
+        <header>
+            <ul>
+
+                <li>LOGO</li>
+                <li>HOME</li>
+                <li>CONTACT</li>
+                <li>ABOUT</li>
+
+                <input type="text" placeholder="Search Songs" />
+                
+            </ul>
+        </header>
+
+        <section id="s1">
+            <div class="s1-top">
+                <h1> Title Song </h1>
+                <h3> Artist</h3>
+            </div>
+
+            <audio id="sng" src="music/m1.mp3" controls></audio>
+
+            <div class="s1-bot">
+                
+                <button class="btn" onclick="volume(0.1)"> Vol++</button>
+
+                <button class="btn" onclick="">Previous</button>
+
+                <button class="btn" onclick="playPause()">Play / Pause</button>
+
+                <button class="btn">NEXT</button>
+
+                <button class="btn" onclick="volume(-0.1)">Vol--</button>
+
+            </div>
+        </section>
+        
+        <section id="s2">
+            <div class="time-bar"></div>
+            <div class="s2">
+                <div class="lyrics">sdfasdfasdfsaf asdf asdf asdf asdf asf asd fasdf asfd </div>
+            </div>
+        </section>
+
+        <section id="s3">
+            <div class="playlist">
+               
+                <div class="music-holder">
+                    <div class="pic"></div>
+                    <div class="text"> 
+                        <h1>Title</h1>
+                        <h3>Artist</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="music-holder">
+                    <div class="pic"></div>
+                    <div class="text"> 
+                        <h1>Title</h1>
+                        <h3>Artist</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="music-holder">
+                    <div class="pic"></div>
+                    <div class="text"> 
+                        <h1>Title</h1>
+                        <h3>Artist</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="music-holder">
+                    <div class="pic"></div>
+                    <div class="text"> 
+                        <h1>Title</h1>
+                        <h3>Artist</h3>
+                    </div>
+                </div>
+
+                <div class="music-holder">
+                    <div class="pic"></div>
+                    <div class="text"> 
+                        <h1>Title</h1>
+                        <h3>Artist</h3>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
