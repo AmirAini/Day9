@@ -106,11 +106,11 @@ function vidChange(fileName) {
     audio.src = fileName;
 
     if (fileName == "music/m1.mp3") {   
-        // document.getElementById('s1').style.backgroundImage = song1.image;
-        // document.getElementById('song-title').innerHTML = song1.title;
-        // document.getElementById('artist').innerHTML = song1.artist;
-        // document.getElementById('lyrics').innerHTML = song1.lyrics;
-        // document.getElementById("switch-btn").innerHTML ="<i class='fas fa-pause'></i>";
+        document.getElementById('s1').style.backgroundImage = song1.image;
+        document.getElementById('song-title').innerHTML = song1.title;
+        document.getElementById('artist').innerHTML = song1.artist;
+        document.getElementById('lyrics').innerHTML = song1.lyrics;
+        document.getElementById("switch-btn").innerHTML ="<i class='fas fa-pause'></i>";
     } else if (fileName == "music/m2.mp3") 
     {
         document.getElementById('s1').style.backgroundImage = song2.image;
