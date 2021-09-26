@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Music Player</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet">
 
 
@@ -27,31 +28,34 @@
 
         <section id="s1">
             <div class="s1-top">
-                <h1> Title Song </h1>
-                <h3> Artist</h3>
+                <h1 id="song-title"></h1>
+                <h3 id="artist"></h3>
             </div>
 
-            <audio id="sng" src="music/m1.mp3" controls></audio>
+            <audio id="audio" src="music/m1.mp3" controls></audio>
 
             <div class="s1-bot">
                 
-                <button class="btn" onclick="volume(0.1)"> Vol++</button>
+                <div class="btn" onclick="volUpdate(0.1)"> Vol++</div>
 
-                <button class="btn" onclick="">Previous</button>
+                <div class="btn" onclick="songSwap(1)">Previous</div>
 
-                <button class="btn" onclick="playPause()">Play / Pause</button>
+                <div id="switch-btn" class="btn" onclick="playPause()"><i class="fas fa-play"></i>
+                </div>
 
-                <button class="btn">NEXT</button>
+                <div class="btn" onclick="songSwap(-1)">NEXT</div>
 
-                <button class="btn" onclick="volume(-0.1)">Vol--</button>
+                <div class="btn" onclick="volUpdate(-0.1)">Vol--</div>
 
             </div>
         </section>
         
         <section id="s2">
-            <div class="time-bar"></div>
+            <div class="seekbar">
+                <div id="time-bar" class="timebar"></div>
+            </div>
             <div class="s2">
-                <div class="lyrics">sdfasdfasdfsaf asdf asdf asdf asdf asf asd fasdf asfd </div>
+                <div id="lyrics" class="lyrics"> </div>
             </div>
         </section>
 
@@ -109,7 +113,7 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 
     
 </body>
