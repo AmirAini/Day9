@@ -28,24 +28,24 @@
 
         <section id="s1">
             <div class="s1-top">
-                <h1 id="song-title"></h1>
-                <h3 id="artist"></h3>
+                <h1 id="song-title">See You</h1>
+                <h3 id="artist">Cartoon</h3>
             </div>
 
-            <audio id="audio" src="music/m1.mp3" controls></audio>
-
+            <audio id="audio" src="music/m1.mp3" autoplay controls></audio> 
+            
             <div class="s1-bot">
-                
-                <div class="btn" onclick="volUpdate(0.1)"> Vol++</div>
+        
+                <button class="btn" onclick="volUpdate(0.1)"> Vol++</button>
 
-                <div class="btn" onclick="songSwap(1)">Previous</div>
+                <button class="btn" onclick="songSwap(-1)">Previous</button>
 
-                <div id="switch-btn" class="btn" onclick="playPause()"><i class="fas fa-play"></i>
-                </div>
+                <button id="switch-btn" class="btn" onclick="playPause()"><i class="fas fa-play"></i>
+                </button>
 
-                <div class="btn" onclick="songSwap(-1)">NEXT</div>
+                <button class="btn" onclick="songSwap(1)">NEXT</button>
 
-                <div class="btn" onclick="volUpdate(-0.1)">Vol--</div>
+                <button class="btn" onclick="volUpdate(-0.1)">Vol--</button> 
 
             </div>
         </section>
@@ -55,7 +55,7 @@
                 <div id="time-bar" class="timebar"></div>
             </div>
             <div class="s2">
-                <div id="lyrics" class="lyrics"> </div>
+                <div id="lyrics" class="lyrics"> Lyrics 1 </div>
             </div>
         </section>
 
@@ -63,45 +63,45 @@
             <div class="playlist">
                
                 <div class="music-holder">
-                    <div class="pic"></div>
+                    <div class="pic" onclick="vidChange('music/m1.mp3')"></div>
                     <div class="text"> 
-                        <h1>Title</h1>
-                        <h3>Artist</h3>
+                        <h1>See you</h1>
+                        <h4>Cartoons</h4>
                         
                     </div>
                 </div>
 
                 <div class="music-holder">
-                    <div class="pic"></div>
+                    <div class="pic" onclick="vidChange('music/m2.mp3')"></div>
                     <div class="text"> 
-                        <h1>Title</h1>
-                        <h3>Artist</h3>
+                        <h2>Travels</h2>
+                        <h4>Khai Dreams</h4>
                         
                     </div>
                 </div>
 
                 <div class="music-holder">
-                    <div class="pic"></div>
+                    <div class="pic" onclick="vidChange('music/m3.mp3')"></div>
                     <div class="text"> 
-                        <h1>Title</h1>
-                        <h3>Artist</h3>
+                        <h3>I'll RMBR U </h3>
+                        <h4>Cartoons</h4>
                         
                     </div>
                 </div>
 
                 <div class="music-holder">
-                    <div class="pic"></div>
+                    <div class="pic" onclick="vidChange('music/m4.mp3')"></div>
                     <div class="text"> 
-                        <h1>Title</h1>
-                        <h3>Artist</h3>
+                        <h1>Gone</h1>
+                        <h4>Cartoons</h4>
                     </div>
                 </div>
 
                 <div class="music-holder">
-                    <div class="pic"></div>
+                    <div class="pic" onclick="vidChange('music/m5.mp3')"></div>
                     <div class="text"> 
-                        <h1>Title</h1>
-                        <h3>Artist</h3>
+                        <h3>Ocean Blue</h3>
+                        <h4>Ivy</h4>
                         
                     </div>
                 </div>
