@@ -1,6 +1,12 @@
 *{
-    margin: 0; padding: 0; box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box; 
+    max-width: 600px; margin:  0 auto;
 }
+/* 
+html, body {
+    max-width: 600px;
+    margin: 0 auto;
+} */
 
 #app{
     padding: 1.25rem;
@@ -92,6 +98,7 @@ header input {
     height: 20px;
     border: 1px solid black;
     text-align: center;
+    margin: 0 10px;
     
 }
 
